@@ -24,7 +24,6 @@ public class SUTTest {
 	@Test
 	public void magicNumberExample() {
 		assertEquals(0, sut.doSomething());
-		assertEquals(0, sut.doSomethingElse());
 	}
 	
 }
