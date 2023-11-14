@@ -28,9 +28,9 @@ public class MainMojo extends AbstractMojo {
         int contador = archivos.length;
         for (File archivo : archivos) {
             if (contador != 1)
-                resultado = "Tests," + directorioJavaTests + "\\" + archivo.getName() + "," + directorioJavaTests.replace("src\\test", "src\\main") + "\\" + archivo.getName().substring(0, archivo.getName().length() - 9) + ".java" + "\n";
+                resultado = "Tests," + directorioJavaTests + "\\" + archivo.getName() + "," + directorioJavaTests.replace("src\\test", "src\\main") + File.separator + archivo.getName().substring(0, archivo.getName().length() - 9) + ".java" + "\n";
             else
-                resultado = "Tests," + directorioJavaTests + "\\" + archivo.getName() + "," + directorioJavaTests.replace("src\\test", "src\\main") + "\\" + archivo.getName().substring(0, archivo.getName().length() - 9) + ".java";
+                resultado = "Tests," + directorioJavaTests + "\\" + archivo.getName() + "," + directorioJavaTests.replace("src\\test", "src\\main") + File.separator + archivo.getName().substring(0, archivo.getName().length() - 9) + ".java";
             contador--;
         }
 
