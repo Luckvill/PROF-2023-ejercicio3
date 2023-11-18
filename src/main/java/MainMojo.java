@@ -9,6 +9,7 @@ import testsmell.TestSmellDetector;
 import thresholds.DefaultThresholds;
 
 import java.io.*;
+import java.nio.file.FileSystems;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
