@@ -19,7 +19,6 @@ public class ResultsWriter {
      * @throws IOException
      */
     private ResultsWriter() throws IOException {
-        String time =  String.valueOf(Calendar.getInstance().getTimeInMillis());
         outputFile = MessageFormat.format("{0}_{1}.{2}", "Salida","TestSmellDetector", "html");
         writer = new FileWriter(outputFile, false);
         writer.write("<html><head><title>Resultados del TestSmell Detector</title></head><body><table border='1'>");
